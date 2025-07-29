@@ -22,4 +22,8 @@ greeting = str(input("Would you like to hear a joke? (yes/no): ").strip().lower(
 if greeting == "yes":
     print(random.choice(jokes))
 else:
-    print("Alright, maybe next time!")
+    print(str(input("Are you sure? I've got some really good ones! (yes/no): ")).strip().lower())
+    if greeting == "yes":
+        print(random.choice(jokes))
+    else:
+        print("Alright, maybe next time!")
